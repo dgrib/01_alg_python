@@ -22,6 +22,8 @@ def find_subs(s: str):
         for i in range(len(s) - sub_length + 1):
             # заносим хеш подстроки во множество, если такой хеш уже есть, то множество не меняется
             sub_hashes_set.add(hashlib.sha1(s[i:i + sub_length].encode('utf-8')).hexdigest())
+            print(s[i:i + sub_length])
+            print(len(sub_hashes_set))
 
     return len(sub_hashes_set)
 

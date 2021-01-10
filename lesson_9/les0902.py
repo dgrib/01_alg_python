@@ -21,7 +21,7 @@ class MyNode:
             node_heap[self.right].search(symbol, code + '1')
 
 
-s = 'begin began begun'
+s = 'aaaaaaaa'
 print(f'Исходная строка: {s}')
 # получаем словарь частотности символов
 symbols = OrderedDict(reversed(Counter(s).most_common()))
